@@ -1,0 +1,55 @@
+#parent{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "input input input"
+    "groupTemp groupLength groupWeight"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+#header{
+    grid-area: header;
+    grid-column: 1/4;
+    text-align-last: center;
+    background-color: cyan;
+    font-family: sans-serif;
+}
+
+#assignNum{
+    color: #4C5270;
+}
+
+#className{
+    color: #F652A0;
+}
+
+#myName{
+    color: #E1C340;
+}
+
+#input{
+    grid-area: input;
+    grid-column: 1/4;
+}
+
+#groupTemp{
+    grid-area: groupTemp;
+    grid-column: 1/2;
+}
+
+#groupLength{
+    grid-area: groupLength;
+    grid-column: 2/3;
+}
+
+#groupWeight{
+    grid-area: groupWeight;
+    grid-column: 3/4;
+}
+
+#footer{
+    grid-area: footer;
+    grid-column: 1/4;
+}
