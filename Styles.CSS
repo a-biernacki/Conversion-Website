@@ -1,3 +1,12 @@
+#background{
+    background-image: url(../Images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+    background-attachment: fixed;
+    background-position: center;
+}
+
 #parent{
     display: grid;
     grid-template-areas: 
@@ -13,43 +22,159 @@
     grid-area: header;
     grid-column: 1/4;
     text-align-last: center;
-    background-color: cyan;
     font-family: sans-serif;
+    background-color: rgb(255, 255, 255, .4);
+    border-top: solid 1px #4C5270;
+    border-bottom: solid 1px #4C5270;
 }
 
 #assignNum{
     color: #4C5270;
+    margin-bottom: 0em;
 }
 
 #className{
-    color: #F652A0;
+    color: #4C5270;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 #myName{
-    color: #E1C340;
+    /* color: #E1C340; */
+    color: #4C5270;
+    margin-top: 0em;
 }
 
 #input{
     grid-area: input;
     grid-column: 1/4;
+    padding: 2em 0em 2em 0em;
+    justify-self: center;
+}
+
+#userInput{
+    width: 10rem;
+    background-color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.buttons{
+    display: inline-flex;
+    flex-direction: column;
+    
 }
 
 #groupTemp{
     grid-area: groupTemp;
     grid-column: 1/2;
+    background-color: rgb(255, 255, 255, .6);
+    text-align: center;
+    font-family: sans-serif;
+    color: #F652A0;
 }
+
+#clear{
+    padding: 14px;
+    width: 5rem;
+}
+
+#button1{
+    margin-bottom: 0.5em;
+}
+
+#button2{
+    
+}
+
+#button3{
+    margin-bottom: 0.5em;
+}
+
+#button4{
+    margin-bottom: 0.5em;
+}
+
+#button5{
+    margin-bottom: 0.5em;
+}
+
+#button6{
+    
+}
+
+#button7{
+    margin-bottom: 0.5em;
+}
+
+#button8{}
 
 #groupLength{
     grid-area: groupLength;
     grid-column: 2/3;
+    background-color: rgb(255, 255, 255, .6);
+    text-align: center;
+    font-family: sans-serif;
+    color: #F652A0;
+    padding-bottom: 1.25em;
+    border-left: solid 1px #4C5270;;
 }
 
 #groupWeight{
     grid-area: groupWeight;
     grid-column: 3/4;
+    background-color: rgb(255, 255, 255, .6);
+    text-align: center;
+    font-family: sans-serif;
+    color: #F652A0;
+    border-left: solid 1px #4C5270;;
 }
 
 #footer{
     grid-area: footer;
     grid-column: 1/4;
+}
+
+input[type=button] {
+    width: 10rem;
+    background-color: #07DAC0;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=button]:hover {
+    width: 10rem;
+    background-color: #00A8A8;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=button]:active {
+    width: 10rem;
+    background-color: #07DAC0;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=text]:focus, select{
+    width: 10rem;
+    background-color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
 }
